@@ -719,6 +719,6 @@ main{grid-template-columns:minmax(360px,440px) minmax(0,1fr)}
 .calculation-actions{display:flex;gap:8px;position:sticky;bottom:12px;z-index:1010;background:var(--bg-1);padding:12px 0;margin-top:0;border-top:1px solid var(--line);box-shadow:0 -8px 12px var(--bg-1)}
 .panel{scroll-padding-bottom:88px}
 .panel input,.panel select,.panel summary,.panel button{scroll-margin-bottom:100px}
-@media(max-width:980px){main{grid-template-columns:1fr}.map-wrap{height:340px;min-height:0}.calculation-actions{bottom:env(safe-area-inset-bottom,0px)}}
+@media(max-width:980px){main{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-auto-rows:auto}.panel{min-width:0}.map-wrap{height:340px;min-height:0}.calculation-actions{position:static;bottom:auto;z-index:auto;box-shadow:none}}
 @media print{.calculation-actions{display:none!important}}
 </style></body></html>
